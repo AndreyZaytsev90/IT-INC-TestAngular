@@ -1,9 +1,19 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-test4',
-  templateUrl: './test4.component.html',
-  styleUrls: ['./test4.component.css']
+  selector: 'vk-test4',
+  template: `
+    <h1 class="title">TEST4</h1>
+  `,
+  styles: [
+    `
+        .title {
+        color: blueviolet;
+        }
+    `
+  ]
+
+
 })
 export class Test4Component {
 

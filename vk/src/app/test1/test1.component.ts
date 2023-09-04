@@ -4,7 +4,7 @@ import {Component} from "@angular/core";
 @Component({
   selector: 'app-test1', // название компоненты
   templateUrl: './test1.component.html', // объявляем разметку
-  styleUrls: ['test1.component.css'] // объявляем стили
+  styleUrls: ['test1.component.scss'] // объявляем стили
 })
 // Компонент не может существовать без модуля
 export class Test1Component {
