@@ -1,5 +1,15 @@
-<vk-test1></vk-test1>
-<vk-test2></vk-test2>
-<vk-test3></vk-test3>
-<vk-test4></vk-test4>
-<vk-test5></vk-test5>
+<div>
+  <h1>{{ title }}</h1>
+  <hr />
+  <h2>{{ user.name }}</h2>
+  <h2>{{ user.age }}</h2>
+  <button [disabled]="isAppLoading">Send</button>
+  <hr />
+  <button (click)="onClickTitleHandler()">Change Title</button>
+  <hr />
+  <h2>{{ textOne }}</h2>
+  <input type="text" (input)="onClickInputHandlerOne($event)" />
+  <hr />
+  <h2>{{ textTwo }}</h2>
+  <input type="text" (keyup.enter)="onClickInputHandlerTwo($event)" />
+</div>
