@@ -1,15 +1,2 @@
-<div>
-  <h1>{{ title }}</h1>
-  <hr />
-  <h2>{{ user.name }}</h2>
-  <h2>{{ user.age }}</h2>
-  <button [disabled]="isAppLoading">Send</button>
-  <hr />
-  <button (click)="onClickTitleHandler()">Change Title</button>
-  <hr />
-  <h2>{{ textOne }}</h2>
-  <input type="text" (input)="onClickInputHandlerOne($event)" />
-  <hr />
-  <h2>{{ textTwo }}</h2>
-  <input type="text" (keyup)="onClickInputHandlerTwo($event)" [value]="textTwo" />
-</div>
+<h2>{{ text }}</h2>
+<input type="text" [(ngModel)]="text" />
