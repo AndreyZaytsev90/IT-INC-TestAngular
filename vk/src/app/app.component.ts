@@ -18,8 +18,8 @@ export class AppComponent {
   }
   isAppLoading = true
 
-  textOne: string | undefined
-  textTwo: string | undefined
+  textOne = ''
+  textTwo = 'start value'
 
   constructor() {
     setTimeout(() => {
